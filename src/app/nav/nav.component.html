@@ -5,7 +5,7 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#" (click)="drawer.close()">Link 1</a>
+      <a mat-list-item routerLink="/picker" (click)="drawer.close()">Pick a Slot</a>
       <a mat-list-item href="#" (click)="drawer.close()">Link 2</a>
       <a mat-list-item href="#" (click)="drawer.close()">Link 3</a>
     </mat-nav-list>
@@ -22,6 +22,8 @@
       </button>
       <span>Agenda</span>
     </mat-toolbar>
-    <!-- Add Content Here -->
+
+    <ng-content></ng-content>
+
   </mat-sidenav-content>
 </mat-sidenav-container>
