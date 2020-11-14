@@ -12,12 +12,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { NavComponent } from './nav/nav.component';
 import { PickerComponent } from './picker/picker.component';
+import { SelectCalendarComponent } from './select-calendar/select-calendar.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    PickerComponent
+    PickerComponent,
+    SelectCalendarComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { PickerComponent } from './picker/picker.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
